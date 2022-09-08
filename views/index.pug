@@ -1,0 +1,28 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  script(src='https://cdn.jsdelivr.net/hls.js/latest/hls.min.js')
+  video#video(controls='')
+  script(type='text/javascript').
+    var video = document.getElementById("video");
+    var videoSrcInHls = "http://localhost:3000/videos/media/video/hls/video.m3u8";
+    var videoSrcInMp4 = "http://localhost:3000/videos/Yohana - Kasat - ዮሐና - ካሣት - New Ethiopian Music 2020 (Official Video).mp4";
+    if (Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(videoSrcInHls);
+      hls.attachMedia(video);
+      hls.on(Hls.Events.MANIFEST_PARSED, function () {
+        video.play();
+      });
+    } else {
+      addSourceToVideo(video, videoSrcInMp4, 'video/mp4');
+      video.play();
+    }
+    function addSourceToVideo(element, src, type) {
+      var source = document.createElement('source');
+      source.src = src;
+      source.type = type;
+      element.appendChild(source);
+    }

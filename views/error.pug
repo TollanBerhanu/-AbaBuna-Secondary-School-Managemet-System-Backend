@@ -1,0 +1,351 @@
+extends layout
+
+block content
+  h1= message
+  h2= error.status
+  pre #{error.stack}
+
+
+
+  style(type='text/css').
+    .tg {
+      border-collapse: collapse;
+      border-color: #aaa;
+      border-spacing: 0;
+    }
+
+    .tg td {
+      background-color: #fff;
+      border-color: #aaa;
+      border-style: solid;
+      border-width: 1px;
+      color: #333;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      overflow: hidden;
+      padding: 2px 20px;
+      word-break: normal;
+    }
+
+    .tg th {
+      background-color: #f38630;
+      border-color: #aaa;
+      border-style: solid;
+      border-width: 1px;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      font-weight: normal;
+      overflow: hidden;
+      padding: 2px 20px;
+      word-break: normal;
+    }
+
+    .tg .tg-c3ow {
+      border-color: inherit;
+      text-align: center;
+      vertical-align: top
+    }
+
+    .tg .tg-ksrh {
+      background-color: #000000;
+      border-color: inherit;
+      text-align: center;
+      vertical-align: top
+    }
+  table.tg
+    thead
+      tr
+        th.tg-c3ow(colspan='2') Section
+        th.tg-c3ow A
+        th.tg-c3ow B
+        th.tg-c3ow C
+        th.tg-c3ow D
+        th.tg-c3ow E
+        th.tg-c3ow F
+    tbody
+      tr
+        td.tg-c3ow(rowspan='7') Monday
+        td.tg-c3ow 1
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 2
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 3
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+      tr
+        td.tg-c3ow 4
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 5
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 6
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow(rowspan='7') Tuesday
+        td.tg-c3ow 1
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 2
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 3
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+      tr
+        td.tg-c3ow 4
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 5
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 6
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow(rowspan='7') Wednesday
+        td.tg-c3ow 1
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 2
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 3
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+      tr
+        td.tg-c3ow 4
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 5
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 6
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow(rowspan='7') Thursday
+        td.tg-c3ow 1
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 2
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 3
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+      tr
+        td.tg-c3ow 4
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 5
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 6
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow(rowspan='7') Friday
+        td.tg-c3ow 1
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 2
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 3
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+        td.tg-ksrh
+      tr
+        td.tg-c3ow 4
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 5
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+      tr
+        td.tg-c3ow 6
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
+        td.tg-c3ow
